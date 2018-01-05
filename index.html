@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>dados</title>
+</head>
+<body>
+
+<div id="game" style="text-align:center;">
+<p>Lançar dados</p>
+<img id="original" src="img/1.png">
+</br>
+<button id="roll" onclick="changeImage()" type="button">rolar</button>
+<button id="roll2" onclick="changeImage2()" type="button">rolar dois</button>
+<p>Palavra ao acaso</p>
+<p id="palavra">Palavra</p>
+<button id="panimais" onclick="changeText()" type="button">Animais</button>
+<button id="pprofissoes" onclick="changeText2()" type="button">Profissões</button>
+</br>
+<button id="pverbos" onclick="changeText3()" type="button">Verbos</button>
+<button id="pcoisas" onclick="changeText4()" type="button">Profissões</button>
+</div>
+<script>
+function changeImage() {
+    var image = document.getElementById('original');
+         images = ["img/1.png", "img/2.png", "img/3.png", "img/4.png", "img/5.png", "img/6.png"];
+		 image.src = images[Math.floor(Math.random() * images.length)];
+	 }
+function changeImage2() {
+    var image = document.getElementById('original');
+         images = ["img/a1.png", "img/a2.png", "img/a3.png", "img/a4.png", "img/a5.png", "img/a6.png", "img/b1.png", "img/b2.png", "img/b3.png", "img/b4.png", "img/b5.png", "img/b6.png", "img/c1.png", "img/c2.png", "img/c3.png", "img/c4.png", "img/c5.png", "img/c6.png", "img/d1.png", "img/d2.png", "img/d3.png", "img/d4.png", "img/d5.png", "img/d6.png", "img/e1.png", "img/e2.png", "img/e3.png", "img/e4.png", "img/e5.png", "img/e6.png", "img/f1.png", "img/f2.png", "img/f3.png", "img/f4.png", "img/f5.png", "img/f6.png"];
+		 image.src = images[Math.floor(Math.random() * images.length)];
+	 }	
+function changeText() {
+        document.getElementById("palavra")
+	    .innerHTML = ["cão", "baleia", "gato", "aranha", "mosca", "pássaro", "crocodilo", "peixe", "minhoca", "touro", "leão", "águia", "tubarão", "tartaruga"][Math.floor(Math.random() * 14)];;
+}
+function changeText2() {
+        document.getElementById("palavra")
+	    .innerHTML = ["Professor", "jogador de futebol", "médico", "piloto", "actor", "padeiro", "taxista", "nadador salvador", "jornalista", "informático", "tradutor", "biologo", "policia", "pugilista"][Math.floor(Math.random() * 14)];;
+}
+</script>
+</body>
+</html>
