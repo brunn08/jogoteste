@@ -8,15 +8,15 @@
 <p>Lançar dados</p>
 <img id="original" src="img/1.png">
 </br>
-<button id="roll" onclick="changeImage()" type="button">rolar</button>
-<button id="roll2" onclick="changeImage2()" type="button">rolar dois</button>
+<button id="roll" onclick="changeImage()" type="button">Lançar</button>
+<button id="roll2" onclick="changeImage2()" type="button">Lançar dois</button>
 <p>Palavra ao acaso</p>
 <p id="palavra">Palavra</p>
 <button id="panimais" onclick="changeText()" type="button">Animais</button>
 <button id="pprofissoes" onclick="changeText2()" type="button">Profissões</button>
 </br>
 <button id="pverbos" onclick="changeText3()" type="button">Verbos</button>
-<button id="pcoisas" onclick="changeText4()" type="button">objetos</button>
+<button id="pcoisas" onclick="changeText4()" type="button">Coisas</button>
 </div>
 <script>
 function changeImage() {
@@ -35,13 +35,19 @@ function changeText() {
 }
 function changeText2() {
         document.getElementById("palavra")
-	    .innerHTML = ["Advogado", "Burocrata", "Alfaiate", "Arquiteto", "Assistente de T.I", "Ator", "Auxiliar de limpeza", "Biólogo", "Bombeiro", "Cabeleireiro", "Camionista", "Carrasco", "Cientista", "Comerciante", "Coletor de lixo", "Costureiro", "Detetive", "Diretor", "Dona de casa", "Economista", "Eletricista", "Empregado doméstico", "Engenheiro", "Encanador", "Engraxate", "Enófilo", "Escritor", "Estilista", "Ferreiro", "Filmotecário", "Fiscal tributário", "Fisiatra", "Flanelinha", "Fogueiro", "Freelancer", "Funileiro", "Futebolista", "Acompanhante de Luxo", "Geógrafo", "Gerente", "Escritor Fantasma", "Guarda-costas", "Imediato", "Juiz", "Kitandeira", "Lenhador", "Locutor", "Mangaká (criador de BD)", "Manicuro", "Mecânico", "Médico", "Militar", "Modelista", "Modelo", "Mordomo", "Moleiro", "Neurocientista", "Orquidicultor", "Olheiro", "Pedreiro", "Piloto", "Pintor", "Político", "Porta-voz", "Porteiro", "Professor", "Professor de Educação Física", "Promotor de eventos", "Publicitário", "Queijeiro", "Relojoeiro", "Revendedor", "Salva-vidas", "Seiyū (Dobrador de cartoon)", "Soldado", "Sushiman", "Supervisor", "Tapeceiro", "Cozinheiro", "Chocolatier", "Cinegrafista", "babysitter", "Part-time", "Ladrão", "Primeiro Ministro", "Contador de histórias", "Pedinte"][Math.floor(Math.random() * 86)];;
+	    .innerHTML = ["Advogado", "Burocrata", "Alfaiate", "Arquiteto", "Assistente de T.I", "Ator", "Auxiliar de limpeza", "Biólogo", "Bombeiro", "Cabeleireiro", "Camionista", "Carrasco", "Cientista", "Comerciante", "Coletor de lixo", "Costureiro", "Detetive", "Diretor", "Dona de casa", "Economista", "Eletricista", "Empregado doméstico", "Engenheiro", "Encanador", "Engraxate", "Enófilo", "Escritor", "Estilista", "Ferreiro", "Filmotecário", "Fiscal tributário", "Fisiatra", "Flanelinha (Arrumador)", "Fogueiro", "Freelancer", "Funileiro", "Futebolista", "Acompanhante de Luxo", "Geógrafo", "Gerente", "Escritor Fantasma", "Guarda-costas", "Imediato", "Juiz", "Kitandeira", "Lenhador", "Locutor", "Mangaká (criador de BD)", "Manicuro", "Mecânico", "Médico", "Militar", "Modelista", "Modelo", "Mordomo", "Moleiro", "Neurocientista", "Orquidicultor", "Olheiro", "Pedreiro", "Piloto", "Pintor", "Político", "Porta-voz", "Porteiro", "Professor", "Professor de Educação Física", "Promotor de eventos", "Publicitário", "Queijeiro", "Relojoeiro", "Revendedor", "Salva-vidas", "Seiyū (Dobrador de cartoon)", "Soldado", "Sushiman", "Supervisor", "Tapeceiro", "Cozinheiro", "Chocolatier", "Cinegrafista", "babysitter", "Part-time", "Ladrão", "Primeiro Ministro", "Contador de histórias", "Pedinte", "Polícia", "Mimo", "Youtuber", "Gamer", "Músico"][Math.floor(Math.random() * 91)];;
 }
 
 function changeText3() {
         document.getElementById("palavra")
-	    .innerHTML = ["Professor", "jogador de futebol", "médico", "piloto", "actor", "padeiro", "taxista", "nadador salvador", "jornalista", "informático", "tradutor", "biologo", "policia", "pugilista"][Math.floor(Math.random() * 14)];;
+	    .innerHTML = ["Sorrir", "Andar", "Dançar", "Voar", "Viver", "Procurar", "Lavar", "Estudar", "Correr", "Escrever", "Jogar", "Aprender", "Proteger", "Acordar", "Fugir", "Brincar", "Viajar", "Tossir", "Tossir", "Amar", "Rir", "Cantar", "Beber", "Ler", "Dormir", "Pensar", "Nascer", "Pular", "Passear", "Trabalhar", "Imprimir", "Bater", "Vestir", "Vencer", "Destruir", "Salvar", "Sonhar", "Beijar", "Descobrir", "Chorar", "Sentar", "Morrer", "Doer", "Desistir", "Gozar", "Casar", "Construir", "Chover", "Matar", "Vomitar", "Doar", "Fumar", "Comer", "Despir", "Falar", "Namorar", "Assaltar", "Morder", "Explodir", "Roubar", "Chupar", "Assinar", "Instalar", "Tremer", "Teclar"][Math.floor(Math.random() * 65)];;
 }
+
+function changeText4() {
+        document.getElementById("palavra")
+	    .innerHTML = ["Carro", "Mota", "Avião", "Comboio", "Barco", "Televisão", "Caneta", "Folha", "Caderno", "Água", "Areia", "Praia", "Vulcão", "Chines", "Francês", "Italiano", "Almofada", "Comando", "Máquina de Lavar", "Smartphone", "Planeta", "NASA", "Africano", "Consola", "Teclado", "Brinco", "Pulseira", "Boneco", "Forno", "Computador", "Internet", "Café", "Fones", "Câmera", "Pneu", "Garrafa", "Dado", "Olho", "Coração", "Dedo", "Pé", "Estômago", "Diarreia", "Gripe", "Sida", "Coleira", "Unha", "Bomba", "Arma", "Nazi", "Trump", "Putin", "Rebelo de Sousa", "Sócrates", "Kim Jong-un", "Supermercado", "Brinquedo", "Preço-Certo", "Óculos", "Gramática", "Dinheiro", "Alien", "Robot", "Quinta", "Safari", "Cinema"][Math.floor(Math.random() * 68)];;
+}
+
 </script>
 </body>
 </html>
