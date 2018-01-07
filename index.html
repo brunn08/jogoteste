@@ -16,7 +16,7 @@
 <button id="pprofissoes" onclick="changeText2()" type="button">Profissões</button>
 </br>
 <button id="pverbos" onclick="changeText3()" type="button">Verbos</button>
-<button id="pcoisas" onclick="changeText4()" type="button">Profissões</button>
+<button id="pcoisas" onclick="changeText4()" type="button">objetos</button>
 </div>
 <script>
 function changeImage() {
@@ -31,9 +31,14 @@ function changeImage2() {
 	 }	
 function changeText() {
         document.getElementById("palavra")
-	    .innerHTML = ["cão", "baleia", "gato", "aranha", "mosca", "pássaro", "crocodilo", "peixe", "minhoca", "touro", "leão", "águia", "tubarão", "tartaruga"][Math.floor(Math.random() * 14)];;
+	    .innerHTML = ["Aardvark", "Abelha", "Águia", "Alce", "Andorinha", "Anta", "Antílope", "Aranha", "Ave-lira", "Avestruz", "Babuíno", "Baleia", "Barata", "Bisão", "Boi", "Borboleta", "Búfalo", "Burro", "Cabra", "Camelo", "Canguru", "Cão", "Caracol", "Caranguejo", "Carneiro", "Castor", "Cavalo", "Cefo", "Chacal", "Chimpanzé", "Cisne", "Cobra", "Coelho", "Coiote", "Cormorão", "Coruja", "Corvo", "Crocodilo", "Cudu", "Doninha", "Dragão-de-Komodo", "Elefante", "Esquilo", "Estrela-do-mar", "Formiga", "Falcão", "Foca", "Gaivota", "Gato", "Golfinho", "Gorila", "Hamster", "Hipopótamo", "Lagarta", "Lagarto", "Leão", "Lobo", "Lontra", "Lula", "Macaco", "Medusa", "Morcego", "Mosca", "Ovelha", "Panda", "Papa-formigas", "Pato", "Piolho", "Peixe", "Pomba", "Porco", "Rato", "Raposa", "Sapo", "Salamandra", "Serpente", "Suricata", "Tartaruga", "Tigre", "Toupeira", "Tubarão", "Urso", "Veado", "Zebra"][Math.floor(Math.random() * 84)];;
 }
 function changeText2() {
+        document.getElementById("palavra")
+	    .innerHTML = ["Advogado", "Burocrata", "Alfaiate", "Arquiteto", "Assistente de T.I", "Ator", "Auxiliar de limpeza", "Biólogo", "Bombeiro", "Cabeleireiro", "Camionista", "Carrasco", "Cientista", "Comerciante", "Coletor de lixo", "Costureiro", "Detetive", "Diretor", "Dona de casa", "Economista", "Eletricista", "Empregado doméstico", "Engenheiro", "Encanador", "Engraxate", "Enófilo", "Escritor", "Estilista", "Ferreiro", "Filmotecário", "Fiscal tributário", "Fisiatra", "Flanelinha", "Fogueiro", "Freelancer", "Funileiro", "Futebolista", "Acompanhante de Luxo", "Geógrafo", "Gerente", "Escritor Fantasma", "Guarda-costas", "Imediato", "Juiz", "Kitandeira", "Lenhador", "Locutor", "Mangaká (criador de BD)", "Manicuro", "Mecânico", "Médico", "Militar", "Modelista", "Modelo", "Mordomo", "Moleiro", "Neurocientista", "Orquidicultor", "Olheiro", "Pedreiro", "Piloto", "Pintor", "Político", "Porta-voz", "Porteiro", "Professor", "Professor de Educação Física", "Promotor de eventos", "Publicitário", "Queijeiro", "Relojoeiro", "Revendedor", "Salva-vidas", "Seiyū (Dobrador de cartoon)", "Soldado", "Sushiman", "Supervisor", "Tapeceiro", "Cozinheiro", "Chocolatier", "Cinegrafista", "babysitter", "Part-time", "Ladrão", "Primeiro Ministro", "Contador de histórias", "Pedinte"][Math.floor(Math.random() * 86)];;
+}
+
+function changeText3() {
         document.getElementById("palavra")
 	    .innerHTML = ["Professor", "jogador de futebol", "médico", "piloto", "actor", "padeiro", "taxista", "nadador salvador", "jornalista", "informático", "tradutor", "biologo", "policia", "pugilista"][Math.floor(Math.random() * 14)];;
 }
